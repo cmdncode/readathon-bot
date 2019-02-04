@@ -52,7 +52,7 @@ def reply_to_tweets():
             print('found scores command!', flush=True)
             print('responding back...', flush=True)
             api.update_status('@' + mention.user.screen_name + ' Ravenclaw: ' + str(ravenclaw), mention.id)
-        elif 'ravenclaw' and 'small' in mention.full_text.lower():
+        elif 'ravenclaw' in mention.full_text.lower() and 'small' in mention.full_text.lower():
           print('Ravenclaw adding book!', flush=True)
           ravenclaw = (ravenclaw + 10)
           api.update_status('@' + mention.user.screen_name +
