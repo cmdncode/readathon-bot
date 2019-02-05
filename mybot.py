@@ -13,6 +13,8 @@ api = tweepy.API(auth)
 
 FILE_NAME = 'last_seen_id.txt'
 
+scores = {}
+
 def retrieve_last_seen_id(file_name):
     f_read = open(file_name, 'r')
     last_seen_id = int(f_read.read().strip())
@@ -24,6 +26,7 @@ def store_last_seen_id(last_seen_id, file_name):
     f_write.write(str(last_seen_id))
     f_write.close()
     return
+
 def reply_to_tweets():
     print('retrieving and replying to tweets...', flush=True)
     # DEV NOTE: use 1060651988453654528 for testing.
@@ -46,17 +49,16 @@ def reply_to_tweets():
         if 'info' in mention.full_text.lower():
             print('found info command!', flush=True)
             print('responding back...', flush=True)
-            api.update_status('@' + mention.user.screen_name +
-                    ' housecupathon info is not avalible yet! Make sure you turn notifications on so you do not miss news updates!', mention.id)
+            api.update_status('@{} housecupathon info is not avalible yet! ' +
+                'Make sure you turn notifications on so you do not miss news updates!'.format(mention.user.screen_name), mention.id)
         elif 'scores' in mention.full_text.lower():
             print('found scores command!', flush=True)
             print('responding back...', flush=True)
-            api.update_status('@' + mention.user.screen_name + ' Ravenclaw: ' + str(ravenclaw), mention.id)
+            api.update_status('@{} Ravenclaw: {}'.format(mention.user.screen_name, str(scores.get('ravenclaw', 0))), mention.id)
         elif 'ravenclaw' in mention.full_text.lower() and 'small' in mention.full_text.lower():
           print('Ravenclaw adding book!', flush=True)
-          ravenclaw = (ravenclaw + 10)
-          api.update_status('@' + mention.user.screen_name +
-                  ' 10 points to Ravenclaw! ', mention.id)
+          scores['ravenclaw'] = scores.setdefault('ravenclaw', 0) + 10
+          api.update_status('@{} 10 points to Ravenclaw!'.format(mention.user.screen_name), mention.id)
             
         
 
