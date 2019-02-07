@@ -458,25 +458,25 @@ def reply_to_tweets():
             if '60' in mention.full_text.lower():
                 length = 60
                 if ran_number4 == 1:
-                    sprint_tweet4 = '60 mins!'
+                    sprint_tweet4 = '60 min sprint is over!'
                 elif ran_number4 == 2:
-                    sprint_tweet4 = '60 min sprint!'
+                    sprint_tweet4 = '60 min sprint ends now!'
                 elif ran_number4 == 3:
-                    sprint_tweet4 = '60 min sprint starting!'
+                    sprint_tweet4 = '60 min sprint ending!'
                 elif ran_number4 == 4:
-                    sprint_tweet4 = '60 min sprint starting now!'
+                    sprint_tweet4 = '60 min sprint ending now!'
                 elif ran_number4 == 5:
-                    sprint_tweet4 = '60 min sprint, as requested!'
+                    sprint_tweet4 = 'Requested 60 min sprint, over!'
                 elif ran_number4 == 6:
-                    sprint_tweet4 = '60 min sprint is starting!'
+                    sprint_tweet4 = '60 min sprint is ending!'
                 elif ran_number4 == 7:
-                    sprint_tweet4 = '60 min sprint, get reading!'
+                    sprint_tweet4 = '60 min sprint over, stop reading!'
                 elif ran_number4 == 8:
-                    sprint_tweet4 = 'Starting a 60 min sprint!'
+                    sprint_tweet4 = 'Ending the 60 min sprint!'
                 elif ran_number4 == 9:
-                    sprint_tweet4 = 'We are starting 60 min sprint now!'
+                    sprint_tweet4 = 'We are ending 60 min sprint now!'
                 elif ran_number4 == 10:
-                    sprint_tweet4 = '60 min sprint, come join!'
+                    sprint_tweet4 = '60 min sprint, ITS OVER!'
 
             # replying to user
             api.update_status('@{} Your sprint via housecupathon has ended! Remember to check in via the main tweet!'.format(mention.user.screen_name), mention.id)
@@ -484,103 +484,103 @@ def reply_to_tweets():
             print ('randomizing pt 2 sprint ending...')
             # part 1 generator
             if ran_number5 == 1:
-                sprint_tweet5 = ' You know what to do!'
+                sprint_tweet5 = ' Thanks for joining us!'
             elif ran_number5 == 2:
-                sprint_tweet5 = ' Get to reading!'
+                sprint_tweet5 = ' Thanks for sprinting with us!'
             elif ran_number5 == 3:
-                sprint_tweet5 = ' Read away friends!'
+                sprint_tweet5 = ' Thanks for participating!'
             elif ran_number5 == 4:
-                sprint_tweet5 = ' READ READ READ!'
+                sprint_tweet5 = ' Thanks for participating in this sprint!'
             elif ran_number5 == 5:
-                sprint_tweet5 = ' Get to reading!'
+                sprint_tweet5 = ' Thanks for joining this sprint!'
             elif ran_number5 == 6:
-                sprint_tweet5 = ' READDD!'
+                sprint_tweet5 = ' Hope you enjoyed this sprint!'
             elif ran_number5 == 7:
-                sprint_tweet5 = ' Its a sprint, get reading!'
+                sprint_tweet5 = ' Hope you had fun sprinting with us!'
             elif ran_number5 == 8:
-                sprint_tweet5 = ' Sprint away!'
+                sprint_tweet5 = ' Hope you had fun durring this sprint!'
             elif ran_number5 == 9:
-                sprint_tweet5 = ' READ!'
+                sprint_tweet5 = ' Hope you had fun!'
             elif ran_number5 == 10:
-                sprint_tweet5 = ' GO!'
+                sprint_tweet5 = ' Hope you enjoyed reading with us!'
             elif ran_number5 == 11:
-                sprint_tweet5 = ' GO! Get to reading!'
+                sprint_tweet5 = ' Hope you are enjoying your book!'
             elif ran_number5 == 12:
-                sprint_tweet5 = ' READ THE BOOOOKKK!'
+                sprint_tweet5 = ' Hope you are loving your book!'
             elif ran_number5 == 13:
-                sprint_tweet5 = ' Get some reading done!'
+                sprint_tweet5 = ' Hope your book is amazing!'
             elif ran_number5 == 14:
-                sprint_tweet5 = ' Speed read mode - engaged!'
+                sprint_tweet5 = ' Hopefully you got a lot read!'
             elif ran_number5 == 15:
-                sprint_tweet5 = ' SPRINT SPRINT SPRINT!'
+                sprint_tweet5 = ' Hope you got a chunk of reading done!'
             elif ran_number5 == 16:
-                sprint_tweet5 = ' I believe in you!'
+                sprint_tweet5 = ' Hope you are speeding through your book!'
             elif ran_number5 == 17:
-                sprint_tweet5 = ' Now kick some butt and READ!'
+                sprint_tweet5 = ' Hope your book is enjoyable!'
             elif ran_number5 == 18:
-                sprint_tweet5 = ' Get that book read!'
+                sprint_tweet5 = ' Hope youre getting that book read!'
             elif ran_number5 == 19:
-                sprint_tweet5 = ' Now, READDD!'
+                sprint_tweet5 = ' We love a good sprint!'
             elif ran_number5 == 20:
-                sprint_tweet5 = ' Now SPRINT!'
+                sprint_tweet5 = ' We always love sprinting with you guys!'
             elif ran_number5 == 21:
-                sprint_tweet5 = ' Sprint away my friends!'
+                sprint_tweet5 = ' Hope you kicked butt durring this sprint!'
             elif ran_number5 == 22:
-                sprint_tweet5 = ' Sprint, Sprint, Sprint!'
+                sprint_tweet5 = ' Remember to take breaks!'
             elif ran_number5 == 23:
-                sprint_tweet5 = ' GO GO GO!'
+                sprint_tweet5 = ' Remember to eat!'
             elif ran_number5 == 24:
-                sprint_tweet5 = ' NOW GO!'
+                sprint_tweet5 = ' Remember to stay hydrated!'
             elif ran_number5 == 25:
-                sprint_tweet5 = ' NOW GET READING!'
+                sprint_tweet5 = ' Remember, your basic need are way more important than reading!'
             elif ran_number5 == 26:
-                sprint_tweet5 = ' Get going and READ!'
+                sprint_tweet5 = ' We love a good reading sprint!'
             elif ran_number5 == 27:
-                sprint_tweet5 = ' READ! READ NOW!'
+                sprint_tweet5 = ' Hope you are focused and read for more sprints!'
             elif ran_number5 == 28:
-                sprint_tweet5 = ' Now get a chunk of reading done!'
+                sprint_tweet5 = ' Hope your sprint went well!'
             elif ran_number5 == 29:
-                sprint_tweet5 = ' Reading sprints are just sprints of the mind. GO!'
+                sprint_tweet5 = ' Hope you are ready for more reading sprints!'
             elif ran_number5 == 30:
-                sprint_tweet5 = ' GO! READ! RIGHT NOW!'
+                sprint_tweet5 = ' Remember you can start your own sprints anytime!'
             elif ran_number5 == 31:
-                sprint_tweet5 = ' Make your house proud!'
+                sprint_tweet5 = ' Check out the commands to start your own sprints!'
             elif ran_number5 == 32:
-                sprint_tweet5 = ' Focus! Read!'
+                sprint_tweet5 = ' Feel like sprinting more? Start one yourself using the bot commands!'
             elif ran_number5 == 33:
-                sprint_tweet5 = ' Get focusing! Get reading!'
+                sprint_tweet5 = ' Remember anyone can start a sprint here!'
             elif ran_number5 == 34:
-                sprint_tweet5 = ' Now focus, and READ!'
+                sprint_tweet5 = ' Sprints are always so uch fun!'
             elif ran_number5 == 35:
-                sprint_tweet5 = ' Focus all your energy on READING!'
+                sprint_tweet5 = ' Im ready for another!'
             elif ran_number5 == 36:
-                sprint_tweet5 = ' Lets see who can read the MOST!'
+                sprint_tweet5 = ' Hope you stayed focus durring this sprint!'
             elif ran_number5 == 37:
-                sprint_tweet5 = ' DO you think you can read the most?!'
+                sprint_tweet5 = ' Hope you stayed focused durring this reading sprint!'
             elif ran_number5 == 38:
-                sprint_tweet5 = ' READ! You know you wanna!'
+                sprint_tweet5 = ' I just love reading!'
             elif ran_number5 == 39:
-                sprint_tweet5 = ' Focus on your book and READ!'
+                sprint_tweet5 = ' I love sharing my reading with you all!'
             elif ran_number5 == 40:
-                sprint_tweet5 = ' Focus on reading. GO!'
+                sprint_tweet5 = ' This is so much fun!!'
             elif ran_number5 == 41:
-                sprint_tweet5 = ' Think you can read more than me?!'
+                sprint_tweet5 = ' Im having a blast!'
             elif ran_number5 == 42:
-                sprint_tweet5 = ' Have fun! Read!'
+                sprint_tweet5 = ' Im having so much fun!'
             elif ran_number5 == 43:
-                sprint_tweet5 = ' READ, and remember to have fun!'
+                sprint_tweet5 = ' Remember that you read for fun!!'
             elif ran_number5 == 45:
-                sprint_tweet5 = ' Sprinting is my favorite!'
+                sprint_tweet5 = ' Remember... reading is FUN!'
             elif ran_number5 == 46:
-                sprint_tweet5 = ' I love sprinting!'
+                sprint_tweet5 = ' Reading with you guys always makes my day!'
             elif ran_number5 == 47:
-                sprint_tweet5 = ' I always love sprinting with you all!'
+                sprint_tweet5 = ' Remember to get food and drink!'
             elif ran_number5 == 48:
-                sprint_tweet5 = ' Id be so happy if youd join us!'
+                sprint_tweet5 = ' Remember- you have to eat and drink to live!'
             elif ran_number5 == 49:
-                sprint_tweet5 = ' SPRINT! GO! READ!'
+                sprint_tweet5 = ' THIS SPRINT WAS AWESOME!'
             elif ran_number5 == 50:
-                sprint_tweet5 = ' READ DAT!'
+                sprint_tweet5 = ' SO happy to be here with you all!'
         
         
             # part 2 generator
