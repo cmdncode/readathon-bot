@@ -3,6 +3,8 @@ import time
 import random
 from random import randint
 print('this is my sprint bot', flush=True)
+length = null
+
 
 CONSUMER_KEY = 'mgn6uqjurbv4vYbbyQIINgWAj'
 CONSUMER_SECRET = 'AEPlDPknQKSCEpsZQgY8rq0Kga0Gf7AEGZDke28yFbIszkOj72'
