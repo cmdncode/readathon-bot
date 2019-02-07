@@ -364,12 +364,14 @@ def reply_to_tweets():
             # create sleep timer until sprint ends 
 
             if length == 15:
-                time.sleep(15)
+                time.sleep(900)
             # time.sleep(15)
             elif length == 30:
-                time.sleep(15)
+                time.sleep(1800)
             elif length == 45:
-                time.sleep(15)
+                time.sleep(2700)
+            elif length == 60:
+                time.sleep(3600)
             else:
                 api.update_status('@{} You have attempted to start a sprint via housecupathon, but there was an error'.format(mention.user.screen_name), mention.id)
    
