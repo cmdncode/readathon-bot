@@ -1,0 +1,101 @@
+
+
+part 4
+
+1 How many pages did you read?
+2 How many pages did you end up reading?
+3 How much did you get read?
+4 How many chapters did you read?
+5 Did you finish more than one chapter?
+6 How much did you read?
+7 What's the title of your current read?
+8 What's your current read?
+9 What book are you currently reading?
+10 What book are you reading?
+11 Have you finished a book recently?
+12 What is the most recent book you finished?
+13 Did you finish a book recently?
+14 Whats the best book youve read this month?
+15 Have you read any 5 star books this month?
+16 What's the most recent 5 star book youve read?
+17 What book are you planning to read next?
+18 Do you have plans for your next read?
+19 If you have a next book planned, what is it?
+20 Whats your favorite spot to read?
+21 Do you have a favorite reading spot?
+22 Where is your favorite reading spot?
+23 Where is your favorite place to read?
+24 Is your current read part of a series?
+25 Is your book part of a series?
+26 Whos your favorite character in your book?
+27 Do you have a favorite character in your book?
+28 Could you deal if you had to be best friends with the mc of your book? 
+29 Whats your reading beverage of choice?
+30 Do you have a reading beverage of choice?
+31 Tea or Coffee?
+32 Whats your favorite candle scent?
+33 Whats your favorite scent of candle?
+34 Would you reccomend your book?
+35 Would you reccomend your current read?
+36 Describe your book in 1 sentence.
+37 Describe your book with a gif.
+38 Describe your book in 1 word.
+39 Describe your MC in 1 word.
+40 Describe your MC with a gif.
+41 What genre are you reading?
+42 What is the genre of your book?
+43 Is your book YA, middle-grade, or adult?
+44 Do you prefer series or standalones?
+45 Is your current read a standalone?
+46 Do you prefer physical, ebook, or audiobook?
+47 Do you generally read physical, ebooks, or audiobooks?
+48 Do you usually take part in readathons?
+49 What is the last readathon you participated in?
+50 Any big ideas for future readathons?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

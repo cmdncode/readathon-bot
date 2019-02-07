@@ -45,7 +45,7 @@ def reply_to_tweets():
         print(str(mention.id) + ' - ' + mention.full_text, flush=True)
         last_seen_id = mention.id
         store_last_seen_id(last_seen_id, FILE_NAME)
-        
+
         if 'info' in mention.full_text.lower():
             print('found info command!', flush=True)
             print('responding back...', flush=True)
@@ -56,97 +56,55 @@ def reply_to_tweets():
             print('responding back...', flush=True)
             score_list = ['{}: {}'.format(house, score) for house, score in scores.items()]
             print (score_list)
-            api.update_status('@{} Ravenclaw: {}'.format(mention.user.screen_name, str(scores.get('ravenclaw', 0))), mention.id)
+            api.update_status('@{} Ravenclaw: {}'.format(mention.user.screen_name, str(scores.get('ravenclaw', 0 ))), mention.id)
+            api.update_status('@{} Hufflepuff: {}'.format(mention.user.screen_name, str(scores.get('hufflepuff',0))), mention.id)
+            api.update_status('@{} Gryffindor: {}'.format(mention.user.screen_name, str(scores.get('gryffindor',0))), mention.id)
+            api.update_status('@{} Slytheryn: {}'.format(mention.user.screen_name, str(scores.get('slytheryn',0))), mention.id)
 
+        elif 'requiredreading' in mention.full_text.lower():
+            print('found req reading command!', flush=True)
+            print('responding back...', flush=True)
+            api.update_status('Required Reading info is not avalible yet! '.format(mention.user.screen_name), mention.id)
+        
+        elif 'finalfeast' in mention.full_text.lower():
+            print('found req reading command!', flush=True)
+            print('responding back...', flush=True)
+            api.update_status('finalfeast info is not avalible yet! '.format(mention.user.screen_name), mention.id)
 
+        elif 'prefects' in mention.full_text.lower():
+            print('found prefects command!', flush=True)
+            print('responding back...', flush=True)
+            api.update_status('Prefects have not yet been chosen for this year! '.format(mention.user.screen_name), mention.id)    
 
-# RAVENCLAW
-        elif 'ravenclaw' in mention.full_text.lower() and 'short' in mention.full_text.lower():
-          print('Ravenclaw adding book!', flush=True)
-          scores['ravenclaw'] = scores.setdefault('ravenclaw', 0) + 10
-          api.update_status('@{} 10 points to Ravenclaw!'.format(mention.user.screen_name), mention.id)
-        elif 'ravenclaw' in mention.full_text.lower() and 'medium' in mention.full_text.lower():
-          print('Ravenclaw adding book!', flush=True)
-          scores['ravenclaw'] = scores.setdefault('ravenclaw', 0) + 30
-          api.update_status('@{} 30 points to Ravenclaw!'.format(mention.user.screen_name), mention.id)
-        elif 'ravenclaw' in mention.full_text.lower() and 'long' in mention.full_text.lower():
-          print('Ravenclaw adding book!', flush=True)
-          scores['ravenclaw'] = scores.setdefault('ravenclaw', 0) + 50
-          api.update_status('@{} 50 points to Ravenclaw!'.format(mention.user.screen_name), mention.id)
-        elif 'ravenclaw' in mention.full_text.lower() and 'giant' in mention.full_text.lower():
-          print('Ravenclaw adding book!', flush=True)
-          scores['ravenclaw'] = scores.setdefault('ravenclaw', 0) + 70
-          api.update_status('@{} 70 points to Ravenclaw!'.format(mention.user.screen_name), mention.id)    
-        elif 'ravenclaw' in mention.full_text.lower() and 'tome' in mention.full_text.lower():
-          print('Ravenclaw adding book!', flush=True)
-          scores['ravenclaw'] = scores.setdefault('ravenclaw', 0) + 100
-          api.update_status('@{} 100 points to Ravenclaw!'.format(mention.user.screen_name), mention.id)
+        else: # houses
+            house = None
+            if 'ravenclaw' in mention.full_text.lower():
+                house = 'ravenclaw'
+            elif 'gryffindor' in mention.full_text.lower():
+                house = 'gryffindor'
+            elif 'hufflepuff' in mention.full_text.lower():
+                house = 'hufflepuff'
+            elif 'slytherin' in mention.full_text.lower():
+                house = 'slytherin'
 
-# GRYFFINDOR
-        elif 'gryffindor' in mention.full_text.lower() and 'short' in mention.full_text.lower():
-          print('Gryffindor adding book!', flush=True)
-          scores['gryffindor'] = scores.setdefault('gryffindor', 0) + 10
-          api.update_status('@{} 10 points to Gryffindor!'.format(mention.user.screen_name), mention.id)
-        elif 'gryffindor' in mention.full_text.lower() and 'medium' in mention.full_text.lower():
-          print('Gryffindor adding book!', flush=True)
-          scores['gryffindor'] = scores.setdefault('gryffindor', 0) + 30
-          api.update_status('@{} 30 points to Gryffindor!'.format(mention.user.screen_name), mention.id)
-        elif 'gryffindor' in mention.full_text.lower() and 'long' in mention.full_text.lower():
-          print('Gryffindor adding book!', flush=True)
-          scores['gryffindor'] = scores.setdefault('gryffindor', 0) + 50
-          api.update_status('@{} 50 points to Gryffindor!'.format(mention.user.screen_name), mention.id)
-        elif 'gryffindor' in mention.full_text.lower() and 'giant' in mention.full_text.lower():
-          print('Gryffindor adding book!', flush=True)
-          scores['gryffindor'] = scores.setdefault('gryffindor', 0) + 70
-          api.update_status('@{} 70 points to Gryffindor!'.format(mention.user.screen_name), mention.id)    
-        elif 'gryffindor' in mention.full_text.lower() and 'tome' in mention.full_text.lower():
-          print('Gryffindor adding book!', flush=True)
-          scores['gryffindor'] = scores.setdefault('gryffindor', 0) + 100
-          api.update_status('@{} 100 points to Gryffindor!'.format(mention.user.screen_name), mention.id)          
+            if house: # there was indeed a valid house
+                points = 0 # no points as of yet, need to analyze
+                print('{} adding book!'.format(house.capitalize()), flush=True)
 
-# HUFFLEPUFF
-        elif 'hufflepuff' in mention.full_text.lower() and 'short' in mention.full_text.lower():
-          print('Hufflepuff adding book!', flush=True)
-          scores['hufflepuff'] = scores.setdefault('hufflepuff', 0) + 10
-          api.update_status('@{} 10 points to Hufflepuff!'.format(mention.user.screen_name), mention.id)
-        elif 'hufflepuff' in mention.full_text.lower() and 'medium' in mention.full_text.lower():
-          print('Hufflepuff adding book!', flush=True)
-          scores['hufflepuff'] = scores.setdefault('hufflepuff', 0) + 30
-          api.update_status('@{} 30 points to Hufflepuff!'.format(mention.user.screen_name), mention.id)
-        elif 'hufflepuff' in mention.full_text.lower() and 'long' in mention.full_text.lower():
-          print('Hufflepuff adding book!', flush=True)
-          scores['hufflepuff'] = scores.setdefault('hufflepuff', 0) + 50
-          api.update_status('@{} 50 points to Hufflepuff!'.format(mention.user.screen_name), mention.id)
-        elif 'hufflepuff' in mention.full_text.lower() and 'giant' in mention.full_text.lower():
-          print('Hufflepuff adding book!', flush=True)
-          scores['hufflepuff'] = scores.setdefault('hufflepuff', 0) + 70
-          api.update_status('@{} 70 points to Hufflepuff!'.format(mention.user.screen_name), mention.id)    
-        elif 'hufflepuff' in mention.full_text.lower() and 'tome' in  mention.full_text.lower():
-          print('Hufflepuff adding book!', flush=True)
-          scores['hufflepuff'] = scores.setdefault('hufflepuff', 0) + 100
-          api.update_status('@{} 100 points to ufflepuff!'.format(mention.user.screen_name), mention.id)  
+                # set point value
+                if 'short' in mention.full_text.lower():
+                    points = 10
+                elif 'medium' in mention.full_text.lower():
+                    points = 30
+                elif 'long' in mention.full_text.lower():
+                    points = 50
+                elif 'giant' in mention.full_text.lower():
+                    points = 70
+                elif 'tome' in mention.full_text.lower():
+                    points = 100
 
-# SLYTHERIN
-        elif 'slytherin' in mention.full_text.lower() and 'short' in mention.full_text.lower():
-          print('Slytherin adding book!', flush=True)
-          scores['slytherin'] = scores.setdefault('slytherin', 0) + 10
-          api.update_status('@{} 10 points to Slytherin!'.format(mention.user.screen_name), mention.id)
-        elif 'slytherin' in mention.full_text.lower() and 'medium' in mention.full_text.lower():
-          print('Slytherin adding book!', flush=True)
-          scores['slytherin'] = scores.setdefault('slytherin', 0) + 30
-          api.update_status('@{} 30 points to Slytherin!'.format(mention.user.screen_name), mention.id)
-        elif 'slytherin' in mention.full_text.lower() and 'long' in mention.full_text.lower():
-          print('Slytherin adding book!', flush=True)
-          scores['slytherin'] = scores.setdefault('slytherin', 0) + 50
-          api.update_status('@{} 50 points to Slytherin!'.format(mention.user.screen_name), mention.id)
-        elif 'slytherin' in mention.full_text.lower() and 'giant' in mention.full_text.lower():
-          print('Slytherin adding book!', flush=True)
-          scores['slytherin'] = scores.setdefault('slytherin', 0) + 70
-          api.update_status('@{} 70 points to Slytherin!'.format(mention.user.screen_name), mention.id)    
-        elif 'slytherin' in mention.full_text.lower() and 'tome' in mention.full_text.lower():
-          print('Slytherin adding book!', flush=True)
-          scores['slytherin'] = scores.setdefault('slytherin', 0) + 100
-          api.update_status('@{} 100 points to Slytherin!'.format(mention.user.screen_name), mention.id)                           
+                scores[house] = scores.setdefault(house, 0) + points
+                api.update_status('@{} {} points to {}!'.format(mention.user.screen_name, points, house.capitalize()), mention.id)
 
 while True:
     reply_to_tweets()
