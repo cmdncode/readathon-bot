@@ -258,103 +258,103 @@ def reply_to_tweets():
         
             # part 2 generator
             if ran_number2 == 1:
-                sprint_tweet2 = 'Let everyone know you are here!'
+                sprint_tweet2 = ' Let everyone know you are here!'
             elif ran_number2 == 2:
-                sprint_tweet2 = 'Let everyone know you are participating!'
+                sprint_tweet2 = ' Let everyone know you are participating!'
             elif ran_number2 == 3:
-                sprint_tweet2 = 'Please RT!'
+                sprint_tweet2 = ' Please RT!'
             elif ran_number2 == 4:
-                sprint_tweet2 = 'Please share!'
+                sprint_tweet2 = ' Please share!'
             elif ran_number2 == 5:
-                sprint_tweet2 = 'Please share with your friends!'
+                sprint_tweet2 = ' Please share with your friends!'
             elif ran_number2 == 6:
-                sprint_tweet2 = 'Remember to share with your friends!'
+                sprint_tweet2 = ' Remember to share with your friends!'
             elif ran_number2 == 7:
-                sprint_tweet2 = 'Share! The more the merrier'
+                sprint_tweet2 = ' Share! The more the merrier'
             elif ran_number2 == 8:
-                sprint_tweet2 = 'Start this sprint off right!'
+                sprint_tweet2 = ' Start this sprint off right!'
             elif ran_number2 == 9:
-                sprint_tweet2 = 'Do you have a page goal in m!ind'
+                sprint_tweet2 = ' Do you have a page goal in m!ind'
             elif ran_number2 == 10:
-                sprint_tweet2 = 'How many pages do you think you can read?'
+                sprint_tweet2 = ' How many pages do you think you can read?'
             elif ran_number2 == 11:
-                sprint_tweet2 = 'Let us know you are sprinting with us!'
+                sprint_tweet2 = ' Let us know you are sprinting with us!'
             elif ran_number2 == 12:
-                sprint_tweet2 = 'Remember to make your presence known!'
+                sprint_tweet2 = ' Remember to make your presence known!'
             elif ran_number2 == 13:
-                sprint_tweet2 = 'DO you have a goal in mind this sprint?!'
+                sprint_tweet2 = ' DO you have a goal in mind this sprint?!'
             elif ran_number2 == 14:
-                sprint_tweet2 = 'RT to get more people on board!'
+                sprint_tweet2 = ' RT to get more people on board!'
             elif ran_number2 == 15:
-                sprint_tweet2 = 'Let us know your page goal!'
+                sprint_tweet2 = ' Let us know your page goal!'
             elif ran_number2 == 16:
-                sprint_tweet2 = 'How much do you think you can read in this time frame?'
+                sprint_tweet2 = ' How much do you think you can read in this time frame?'
             elif ran_number2 == 17:
-                sprint_tweet2 = 'Tag a friend who loves sprints!'
+                sprint_tweet2 = ' Tag a friend who loves sprints!'
             elif ran_number2 == 18:
-                sprint_tweet2 = 'Tag a friend who loves reading sprints!!'
+                sprint_tweet2 = ' Tag a friend who loves reading sprints!!'
             elif ran_number2 == 19:
-                sprint_tweet2 = 'Help grow our community and tag a friend who likes reading sprints!'
+                sprint_tweet2 = ' Help grow our community and tag a friend who likes reading sprints!'
             elif ran_number2 == 20:
-                sprint_tweet2 = 'Help grow our community and RT!'
+                sprint_tweet2 = ' Help grow our community and RT!'
             elif ran_number2 == 21:
-                sprint_tweet2 = 'Help grow our community and share!'
+                sprint_tweet2 = ' Help grow our community and share!'
             elif ran_number2 == 22:
-                sprint_tweet2 = 'Help grow our community and get your friends involved!'
+                sprint_tweet2 = ' Help grow our community and get your friends involved!'
             elif ran_number2 == 23:
-                sprint_tweet2 = 'Help grow pur community and share this tweet!'
+                sprint_tweet2 = ' Help grow pur community and share this tweet!'
             elif ran_number2 == 24:
-                sprint_tweet2 = 'Let everyone know youre sprinting by replying to this tweet!'
+                sprint_tweet2 = ' Let everyone know youre sprinting by replying to this tweet!'
             elif ran_number2 == 25:
-                sprint_tweet2 = 'Let everyone know you are sprinting by replying to this tweet!'
+                sprint_tweet2 = ' Let everyone know you are sprinting by replying to this tweet!'
             elif ran_number2 == 26:
-                sprint_tweet2 = 'Let your friends know! The more participants, the more fun we will have!'            
+                sprint_tweet2 = ' Let your friends know! The more participants, the more fun we will have!'            
             elif ran_number2 == 27:
-                sprint_tweet2 = 'This is gonna be so much fun!'
+                sprint_tweet2 = ' This is gonna be so much fun!'
             elif ran_number2 == 28:
-                sprint_tweet2 = 'This is gonna be fun!'
+                sprint_tweet2 = ' This is gonna be fun!'
             elif ran_number2 == 29:
-                sprint_tweet2 = 'This is going to be a blast!'
+                sprint_tweet2 = ' This is going to be a blast!'
             elif ran_number2 == 30:
-                sprint_tweet2 = 'This is gonna be a blast!'
+                sprint_tweet2 = ' This is gonna be a blast!'
             elif ran_number2 == 31:
-                sprint_tweet2 = 'Have fun!'
+                sprint_tweet2 = ' Have fun!'
             elif ran_number2 == 32:
-                sprint_tweet2 = 'Have fun all!'
+                sprint_tweet2 = ' Have fun all!'
             elif ran_number2 == 33:
-                sprint_tweet2 = 'Remember to have fun!'
+                sprint_tweet2 = ' Remember to have fun!'
             elif ran_number2 == 34:
-                sprint_tweet2 = 'I love a good sprint!'
+                sprint_tweet2 = ' I love a good sprint!'
             elif ran_number2 == 35:
-                sprint_tweet2 = 'Make sure to RT or tag your friends!'
+                sprint_tweet2 = ' Make sure to RT or tag your friends!'
             elif ran_number2 == 36:
-                sprint_tweet2 = 'Let everyone know you are sprinting and reply to this tweet'
+                sprint_tweet2 = ' Let everyone know you are sprinting and reply to this tweet'
             elif ran_number2 == 37:
-                sprint_tweet2 = 'Get off twitter and get going!'
+                sprint_tweet2 = ' Get off twitter and get going!'
             elif ran_number2 == 38:
-                sprint_tweet2 = 'No more twitter! Get sprinting'
+                sprint_tweet2 = ' No more twitter! Get sprinting'
             elif ran_number2 == 39:
-                sprint_tweet2 = 'Invite your friends!'
+                sprint_tweet2 = ' Invite your friends!'
             elif ran_number2 == 40:
-                sprint_tweet2 = 'Remember to invite your friends!'
+                sprint_tweet2 = ' Remember to invite your friends!'
             elif ran_number2 == 41:
-                sprint_tweet2 = 'RT to support this account!'
+                sprint_tweet2 = ' RT to support this account!'
             elif ran_number2 == 42:
-                sprint_tweet2 = 'Remember to share to support this account!'
+                sprint_tweet2 = ' Remember to share to support this account!'
             elif ran_number2 == 43:
-                sprint_tweet2 = 'Remember to share and support our growing community!'
+                sprint_tweet2 = ' Remember to share and support our growing community!'
             elif ran_number2 == 45:
-                sprint_tweet2 = 'Remember to support us by sharing!'
+                sprint_tweet2 = ' Remember to support us by sharing!'
             elif ran_number2 == 46:
-                sprint_tweet2 = 'Remember to support our growing community and share!'
+                sprint_tweet2 = ' Remember to support our growing community and share!'
             elif ran_number2 == 47:
-                sprint_tweet2 = 'Remember to RT and share with your bookish friends!'
+                sprint_tweet2 = ' Remember to RT and share with your bookish friends!'
             elif ran_number2 == 48:
-                sprint_tweet2 = 'Id be so greatful if you would share this sprint with your friends!'
+                sprint_tweet2 = ' Id be so greatful if you would share this sprint with your friends!'
             elif ran_number2 == 49:
-                sprint_tweet2 = 'REMEMBER TO RT OUR SPRINTS!'
+                sprint_tweet2 = ' REMEMBER TO RT OUR SPRINTS!'
             elif ran_number2 == 50:
-                sprint_tweet1 = 'Lets GOOOOOOOOOOO!!!!'
+                sprint_tweet1 = ' Lets GOOOOOOOOOOO!!!!'
             
 
 
@@ -589,105 +589,105 @@ def reply_to_tweets():
         
             # part 2 generator
             if ran_number6 == 1:
-                sprint_tweet6 = 'How many pages did you read?'
+                sprint_tweet6 = ' How many pages did you read?'
             elif ran_number6 == 2:
-                sprint_tweet6 = 'How many pages did you end up reading?'
+                sprint_tweet6 = ' How many pages did you end up reading?'
             elif ran_number6 == 3:
-                sprint_tweet6 = 'How much did you get read?'
+                sprint_tweet6 = ' How much did you get read?'
             elif ran_number6 == 4:
-                sprint_tweet6 = 'How many chapters did you read?'
+                sprint_tweet6 = ' How many chapters did you read?'
             elif ran_number6 == 5:
-                sprint_tweet6 = 'Did you finish more than one chapter?'
+                sprint_tweet6 = ' Did you finish more than one chapter?'
             elif ran_number6 == 6:
-                sprint_tweet6 = 'How much did you read?'
+                sprint_tweet6 = ' How much did you read?'
             elif ran_number6 == 7:
-                sprint_tweet6 = 'Whats the title of your current read?'
+                sprint_tweet6 = ' Whats the title of your current read?'
             elif ran_number6 == 8:
-                sprint_tweet6 = 'Whats your current read?'
+                sprint_tweet6 = ' Whats your current read?'
             elif ran_number6 == 9:
-                sprint_tweet6 = 'What book are you currently reading?'
+                sprint_tweet6 = ' What book are you currently reading?'
             elif ran_number6 == 10:
-                sprint_tweet6 = 'What book are you reading?'
+                sprint_tweet6 = ' What book are you reading?'
             elif ran_number6 == 11:
-                sprint_tweet6 = 'Have you finished a book recently?'
+                sprint_tweet6 = ' Have you finished a book recently?'
             elif ran_number6 == 12:
-                sprint_tweet6 = 'What is the most recent book you finished?'
+                sprint_tweet6 = ' What is the most recent book you finished?'
             elif ran_number6 == 13:
-                sprint_tweet6 = 'Did you finish a book recently?'
+                sprint_tweet6 = ' Did you finish a book recently?'
             elif ran_number6 == 14:
-                sprint_tweet6 = 'Whats the best book youve read this month?'
+                sprint_tweet6 = ' Whats the best book youve read this month?'
             elif ran_number6 == 15:
-                sprint_tweet6 = 'Have you read any 5 star books this month?'
+                sprint_tweet6 = ' Have you read any 5 star books this month?'
             elif ran_number6 == 16:
-                sprint_tweet2 = 'Whats the most recent 5 star book youve read?'
+                sprint_tweet2 = ' Whats the most recent 5 star book youve read?'
             elif ran_number6 == 17:
-                sprint_tweet6 = 'What book are you planning to read next?'
+                sprint_tweet6 = ' What book are you planning to read next?'
             elif ran_number6 == 18:
-                sprint_tweet6 = 'Do you have plans for your next read?'
+                sprint_tweet6 = ' Do you have plans for your next read?'
             elif ran_number6 == 19:
-                sprint_tweet6 = 'If you have a next book planned, what is it?'
+                sprint_tweet6 = ' If you have a next book planned, what is it?'
             elif ran_number6 == 20:
-                sprint_tweet6 = 'Whats your favorite spot to read?'
+                sprint_tweet6 = ' Whats your favorite spot to read?'
             elif ran_number6 == 21:
-                sprint_tweet6 = 'Do you have a favorite reading spot?'
+                sprint_tweet6 = ' Do you have a favorite reading spot?'
             elif ran_number6 == 22:
-                sprint_tweet6 = 'Where is your favorite reading spot?'
+                sprint_tweet6 = ' Where is your favorite reading spot?'
             elif ran_number6 == 23:
-                sprint_tweet6 = 'Where is your favorite place to read?'
+                sprint_tweet6 = ' Where is your favorite place to read?'
             elif ran_number6 == 24:
-                sprint_tweet6 = 'Is your current read part of a series?'
+                sprint_tweet6 = ' Is your current read part of a series?'
             elif ran_number6 == 25:
-                sprint_tweet6 = 'Is your book part of a series?'
+                sprint_tweet6 = ' Is your book part of a series?'
             elif ran_number6 == 26:
-                sprint_tweet6 = 'Whos your favorite character in your book?'
+                sprint_tweet6 = ' Whos your favorite character in your book?'
             elif ran_number6 == 27:
-                sprint_tweet6 = 'Do you have a favorite character in your book?'
+                sprint_tweet6 = ' Do you have a favorite character in your book?'
             elif ran_number6 == 28:
-                sprint_tweet6 = 'Could you deal if you had to be best friends with the mc of your book?'
+                sprint_tweet6 = ' Could you deal if you had to be best friends with the mc of your book?'
             elif ran_number6 == 29:
-                sprint_tweet6 = 'Whats your reading beverage of choice?'
+                sprint_tweet6 = ' Whats your reading beverage of choice?'
             elif ran_number6 == 30:
-                sprint_tweet6 = 'Do you have a reading beverage of choice?'
+                sprint_tweet6 = ' Do you have a reading beverage of choice?'
             elif ran_number6 == 31:
-                sprint_tweet6 = 'Tea or Coffee?'
+                sprint_tweet6 = ' Tea or Coffee?'
             elif ran_number6 == 32:
-                sprint_tweet6 = 'Whats your favorite candle scent?'
+                sprint_tweet6 = ' Whats your favorite candle scent?'
             elif ran_number6 == 33:
-                sprint_tweet6 = 'Whats your favorite scent of candle?'
+                sprint_tweet6 = ' Whats your favorite scent of candle?'
             elif ran_number6 == 34:
-                sprint_tweet6 = 'Would you reccomend your book to others?'
+                sprint_tweet6 = ' Would you reccomend your book to others?'
             elif ran_number6 == 35:
-                sprint_tweet6 = 'Would you reccomend your current read?'
+                sprint_tweet6 = ' Would you reccomend your current read?'
             elif ran_number6 == 36:
-                sprint_tweet6 = 'Describe your book with a gif.'
+                sprint_tweet6 = ' Describe your book with a gif.'
             elif ran_number6 == 37:
-                sprint_tweet6 = 'Describe your book in 1 sentence.'
+                sprint_tweet6 = ' Describe your book in 1 sentence.'
             elif ran_number6 == 38:
-                sprint_tweet6 = 'Describe your book in 1 word'
+                sprint_tweet6 = ' Describe your book in 1 word'
             elif ran_number6 == 39:
-                sprint_tweet6 = 'Describe your MC in 1 word.'
+                sprint_tweet6 = ' Describe your MC in 1 word.'
             elif ran_number6 == 40:
-                sprint_tweet6 = 'Describe your MC with a gif.'
+                sprint_tweet6 = ' Describe your MC with a gif.'
             elif ran_number6 == 41:
-                sprint_tweet6 = 'What genre are you reading?'
+                sprint_tweet6 = ' What genre are you reading?'
             elif ran_number6 == 42:
-                sprint_tweet6 = 'What is the genre of your book?'
+                sprint_tweet6 = ' What is the genre of your book?'
             elif ran_number6 == 43:
-                sprint_tweet6 = 'Is your book YA, middle-grade, or adult?'
+                sprint_tweet6 = ' Is your book YA, middle-grade, or adult?'
             elif ran_number6 == 44:
-                sprint_tweet6 = 'Do you prefer series or standalones?'
+                sprint_tweet6 = ' Do you prefer series or standalones?'
             elif ran_number6 == 45:
-                sprint_tweet6 = 'Is your current read a standalone?'
+                sprint_tweet6 = ' Is your current read a standalone?'
             elif ran_number6 == 46:
-                sprint_tweet6 = 'Do you prefer physical, ebook, or audiobook?'
+                sprint_tweet6 = ' Do you prefer physical, ebook, or audiobook?'
             elif ran_number6 == 47:
-                sprint_tweet6 = 'Do you generally read physical, ebooks, or audiobooks?'
+                sprint_tweet6 = ' Do you generally read physical, ebooks, or audiobooks?'
             elif ran_number6 == 48:
-                sprint_tweet6 = 'Do you usually take part in readathons?!'
+                sprint_tweet6 = ' Do you usually take part in readathons?!'
             elif ran_number6 == 49:
-                sprint_tweet6 = 'What is the last readathon you participated in?'
+                sprint_tweet6 = ' What is the last readathon you participated in?'
             elif ran_number6 == 50:
-                sprint_tweet6 = 'Any big ideas for future readathons?'
+                sprint_tweet6 = ' Any big ideas for future readathons?'
             
 
 
