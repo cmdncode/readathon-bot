@@ -301,10 +301,16 @@ def reply_to_tweets():
                 reply2 = ' SPRINT! GO! READ!'
             elif ran_msg2 == 50:
                 reply2 = ' READ DAT!'
+            else:
+                reply2 = ' Error creating tweet_pt2'
 
+            master_reply = reply1 + reply2
 
+            api.update_status('@{} You have started a sprint via housecupathon! {}'.format(mention.user.screen_name, master_reply), mention.id )
 
-            api.update_status('@{} You have started a {} min sprint via housecupathon! {}'.format(mention.user.screen_name), mention.id, length, randommsg1, randommsg2)
+            # api.update_status('@{} Your sprint via housecupathon has ended! Remember to check in via the main tweet!'.format(mention.user.screen_name), mention.id)
+
+            # api.update_status(sprint_tweet_master_end)
 
             print ('randomizing pt 2...')
             # part 1 generator
