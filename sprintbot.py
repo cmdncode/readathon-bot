@@ -152,7 +152,159 @@ def reply_to_tweets():
                     sprint_tweet3 = '60 min sprint, come join!'
 
             # replying to user
-            api.update_status('@{} You have started a sprint via housecupathon! Let everyone know you are participating via the main tweet'.format(mention.user.screen_name), mention.id)
+
+            ran_msg1 = (randint(1, 20))
+            ran_msg2 = (randint(1, 50))
+            reply1 = ''
+            reply2 = ''
+
+            # msg 1 generator
+            if ran_msg1 == 1:
+                reply1 = ' Make sure you check in via the main tweet!'
+            elif ran_msg1 == 2:
+                reply1 = ' Make sure you let everyone know youre participating!'
+            elif ran_msg1 == 3:
+                reply1 = ' Make sure you let everyone know youre participating via the main tweet!'
+            elif ran_msg1 == 4:
+                reply1 = ' Make sure you check in with everyone!'
+            elif ran_msg1 == 5:
+                reply1 = ' Make sure to say hi to everyone!'
+            elif ran_msg1 == 6:
+                reply1 = ' Make sure to say hi to everyone via the main tweet!'
+            elif ran_msg1 == 7:
+                reply1 = ' Its a party! Make sure you check in via the main tweet!'
+            elif ran_msg1 == 8:
+                reply1 = ' Its a party! Make sure you let everyone know youre participating!'
+            elif ran_msg1 == 9:
+                reply1 = ' Its a party! Make sure you let everyone know youre participating via the main tweet!'
+            elif ran_msg1 == 10:
+                reply1 = ' Its a party! Make sure you check in with everyone!'
+            elif ran_msg1 == 11:
+                reply1 = ' Its a party! Make sure to say hi to everyone!'
+            elif ran_msg1 == 12:
+                reply1 = ' Its a party! Make sure to say hi to everyone via the main tweet!'
+            elif ran_msg1 == 13:
+                reply1 = ' Make sure you tag your friends!'
+            elif ran_msg1 == 14:
+                reply1 = ' Make sure to tag your friends in the main tweet!'
+            elif ran_msg1 == 15:
+                reply1 = ' Make sure to get all your friends involved!'
+            elif ran_msg1 == 16:
+                reply1 = ' Make sure to get all your friends involved via the main tweet!'
+            elif ran_msg1 == 17:
+                reply1 = ' Now shame your friends into participating!'
+            elif ran_msg1 == 18:
+                reply1 = ' Now tag all your friends! SHAME THEM INTO PARTICIPATING!'
+            elif ran_msg1 == 19:
+                reply1 = ' Invite all your friends to participate!'
+            elif ran_msg1 == 20:
+                reply1 = ' Make sure to invite all your friends to participate!'
+            else:
+                reply1 = 'error creating tweet_pt1'
+        
+            # msg 1 generator
+            if ran_msg2 == 1:
+                reply2 = ' You know what to do!'
+            elif ran_msg2 == 2:
+                reply2 = ' Get to reading!'
+            elif ran_msg2 == 3:
+                reply2 = ' Read away friend!'
+            elif ran_msg2 == 4:
+                reply2 = ' READ READ READ!'
+            elif ran_msg2 == 5:
+                reply2 = ' Get to reading!'
+            elif ran_msg2 == 6:
+                reply2 = ' READDD!'
+            elif ran_msg2 == 7:
+                reply2 = ' Its a sprint, get reading!'
+            elif ran_msg2 == 8:
+                reply2 = ' Sprint away!'
+            elif ran_msg2 == 9:
+                reply2 = ' READ!'
+            elif ran_msg2 == 10:
+                reply2 = ' GO!'
+            elif ran_msg2 == 11:
+                reply2 = ' GO! Get to reading!'
+            elif ran_msg2 == 12:
+                reply2 = ' READ THE BOOOOKKK!'
+            elif ran_msg2 == 13:
+                reply2 = ' Get some reading done!'
+            elif ran_msg2 == 14:
+                reply2 = ' Speed read mode - engaged!'
+            elif ran_msg2 == 15:
+                reply2 = ' SPRINT SPRINT SPRINT!'
+            elif ran_msg2 == 16:
+                reply2 = ' I believe in you!'
+            elif ran_msg2 == 17:
+                reply2 = ' Now kick some butt and READ!'
+            elif ran_msg2 == 18:
+                reply2 = ' Get that book read!'
+            elif ran_msg2 == 19:
+                reply2 = ' Now, READDD!'
+            elif ran_msg2 == 20:
+                reply2 = ' Now SPRINT!'
+            elif ran_msg2 == 21:
+                reply2 = ' Sprint away my friends!'
+            elif ran_msg2 == 22:
+                reply2 = ' Sprint, Sprint, Sprint!'
+            elif ran_msg2 == 23:
+                reply2 = ' GO GO GO!'
+            elif ran_msg2 == 24:
+                reply2 = ' NOW GO!'
+            elif ran_msg2 == 25:
+                reply2 = ' NOW GET READING!'
+            elif ran_msg2 == 26:
+                reply2 = ' Get going and READ!'
+            elif ran_msg2 == 27:
+                reply2 = ' READ! READ NOW!'
+            elif ran_msg2 == 28:
+                reply2 = ' Now get a chunk of reading done!'
+            elif ran_msg2 == 29:
+                reply2 = ' Reading sprints are just sprints of the mind. GO!'
+            elif ran_msg2 == 30:
+                reply2 = ' GO! READ! RIGHT NOW!'
+            elif ran_msg2 == 31:
+                reply2 = ' Make your house proud!'
+            elif ran_msg2 == 32:
+                reply2 = ' Focus! Read!'
+            elif ran_msg2 == 33:
+                reply2 = ' Get focusing! Get reading!'
+            elif ran_msg2 == 34:
+                reply2 = ' Now focus, and READ!'
+            elif ran_msg2 == 35:
+                reply2 = ' Focus all your energy on READING!'
+            elif ran_msg2 == 36:
+                reply2 = ' Lets see who can read the MOST!'
+            elif ran_msg2 == 37:
+                reply2 = ' DO you think you can read the most?!'
+            elif ran_msg2 == 38:
+                reply2 = ' READ! You know you wanna!'
+            elif ran_msg2 == 39:
+                reply2 = ' Focus on your book and READ!'
+            elif ran_msg2 == 40:
+                reply2 = ' Focus on reading. GO!'
+            elif ran_msg2 == 41:
+                reply2 = ' Think you can read more than me?!'
+            elif ran_msg2 == 42:
+                reply2 = ' Have fun! Read!'
+            elif ran_msg2 == 43:
+                reply2 = ' READ, and remember to have fun!'
+            elif ran_msg2 == 45:
+                reply2 = ' Sprinting is my favorite!'
+            elif ran_msg2 == 46:
+                reply2 = ' I love sprinting!'
+            elif ran_msg2 == 47:
+                reply2 = ' I always love sprinting with you all!'
+            elif ran_msg2 == 48:
+                reply2 = ' Im so glad you started this sprint!'
+            elif ran_msg2 == 49:
+                reply2 = ' SPRINT! GO! READ!'
+            elif ran_msg2 == 50:
+                reply2 = ' READ DAT!'
+
+
+
+            api.update_status('@{} You have started a {} min sprint via housecupathon! {}'.format(mention.user.screen_name), mention.id, length, randommsg1, randommsg2)
 
             print ('randomizing pt 2...')
             # part 1 generator
