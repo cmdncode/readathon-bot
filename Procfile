@@ -1,1 +1,1 @@
-web: python sprintbot.py
+worker: python sprintbot.py
