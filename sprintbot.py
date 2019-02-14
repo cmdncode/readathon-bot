@@ -304,7 +304,7 @@ def reply_to_tweets():
             else:
                 reply2 = ' Error creating tweet_pt2'
 
-            master_reply = reply1 + reply2
+            master_reply = (reply1 + reply2)
 
             api.update_status('@{} You have started a sprint via housecupathon! {}'.format(mention.user.screen_name, master_reply), mention.id )
 
