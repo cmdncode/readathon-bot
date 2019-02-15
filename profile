@@ -1,1 +1,1 @@
-worker: python sprintbot.py
+worker: python3 sprintbot.py
