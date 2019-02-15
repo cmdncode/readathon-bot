@@ -641,7 +641,7 @@ def reply_to_tweets():
                     sprint_tweet4 = '60 min sprint, ITS OVER!'
 
             # replying to user
-            api.update_status('@{} Your sprint via housecupathon has ended! Remember to check in via the main tweet!'.format(mention.user.screen_name), mention.id)
+            # api.update_status('@{} Your sprint via housecupathon has ended! Remember to check in via the main tweet!'.format(mention.user.screen_name), mention.id)
 
             print ('randomizing pt 2 sprint ending...')
             # part 1 generator
